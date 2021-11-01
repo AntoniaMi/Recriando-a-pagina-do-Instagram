@@ -10,7 +10,7 @@
 body {
     width: 100%;
     min-height: 100vh;
-    background-color: rgb(243, 243, 243);
+    background-color: #121215;
     margin: 0;
     padding: 0;
     display: flex;
@@ -50,11 +50,51 @@ body {
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    background-color: #ffffff;
+    background: radial-gradient(
+            circle farthest-corner at 35% 90%,
+            #fec564,
+            transparent 50%
+        ),
+        radial-gradient(
+            circle farthest-corner at 0 140%,
+            #fec564,
+            transparent 50%
+        ),
+        radial-gradient(
+            ellipse farthest-corner at 0 -25%,
+            #5258cf,
+            transparent 50%
+        ),
+        radial-gradient(
+            ellipse farthest-corner at 20% -50%,
+            #5258cf,
+            transparent 50%
+        ),
+        radial-gradient(
+            ellipse farthest-corner at 100% 0,
+            #893dc2,
+            transparent 50%
+        ),
+        radial-gradient(
+            ellipse farthest-corner at 60% -20%,
+            #893dc2,
+            transparent 50%
+        ),
+        radial-gradient(
+            ellipse farthest-corner at 100% 100%,
+            #d9317a,
+            transparent
+        ),
+        linear-gradient(
+            #6559ca,
+            #bc318f 30%,
+            #e33f5f 50%,
+            #f77638 70%,
+            #fec66d 100%
+        );
     width: 100%;
     padding: 1.3rem 0;
-    border: 1px solid lightgray;
-    margin: 0.5rem;
+    margin: 1rem;
 }
 
 .group:nth-child(1) {
@@ -85,13 +125,8 @@ body {
     margin-top: 1rem;
 }
 
-.instagram-logout {
-    color: #0095f6;
-    margin-top: 1rem;
-}
-
 .link-blue {
-    color: #0095f6;
+    color: #0f77bd;
 }
 
 .get-the-app {
@@ -101,6 +136,10 @@ body {
     justify-content: center;
     width: 100%;
     padding: 1.3rem 0;
+}
+
+.get-app {
+    color: #ffffff;
 }
 
 .download {
@@ -133,7 +172,7 @@ body {
 
 @media (max-width: 650px) {
     body {
-        background-color: #ffffff;
+        background-color: #121215;
     }
 
     .instagram-wrapper {
@@ -146,9 +185,5 @@ body {
 
     .instagram-continue {
         width: 100%;
-    }
-
-    .group {
-        border: 1px solid transparent;
     }
 }
